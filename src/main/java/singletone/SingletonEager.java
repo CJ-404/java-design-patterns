@@ -1,6 +1,6 @@
 package singletone;
 
-public class SingletonEager {
+public class SingletonEager implements Singleton {
 
     private static final SingletonEager instance = new SingletonEager();
     private SingletonEager(){}
