@@ -1,6 +1,7 @@
 import builder.BuilderPatternDemo;
 import factory.FactoryPatternDemo;
 import prototype.ProtoypePatternDemo;
+import proxy.ProxyPatternDemo;
 import singletone.SingletonPatternDemo;
 
 public class Main {
@@ -14,6 +15,8 @@ public class Main {
         new BuilderPatternDemo().run();
 
         new ProtoypePatternDemo().run();
+
+        new ProxyPatternDemo().run();
     }
 
 }
