@@ -1,4 +1,4 @@
-import Builder.BuilderPatternDemo;
+import builder.BuilderPatternDemo;
 import factory.FactoryPatternDemo;
 import prototype.ProtoypePatternDemo;
 import singletone.SingletonPatternDemo;
