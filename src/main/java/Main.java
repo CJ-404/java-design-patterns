@@ -1,3 +1,4 @@
+import Builder.BuilderPatternDemo;
 import factory.FactoryPatternDemo;
 import singletone.SingletonPatternDemo;
 
@@ -8,6 +9,8 @@ public class Main {
         new SingletonPatternDemo().run();
 
         new FactoryPatternDemo().run();
+
+        new BuilderPatternDemo().run();
     }
 
 }
