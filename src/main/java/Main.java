@@ -1,4 +1,5 @@
 import builder.BuilderPatternDemo;
+import facade.FacadePatternDemo;
 import factory.FactoryPatternDemo;
 import prototype.ProtoypePatternDemo;
 import proxy.ProxyPatternDemo;
@@ -17,6 +18,8 @@ public class Main {
         new ProtoypePatternDemo().run();
 
         new ProxyPatternDemo().run();
+
+        new FacadePatternDemo().run();
     }
 
 }
