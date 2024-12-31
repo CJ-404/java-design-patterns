@@ -6,6 +6,23 @@ import java.util.stream.Collectors;
 
 public class ItemCart extends Item{
     private final List<Item> items = new ArrayList<>();
+    private static ItemCart instance;
+
+    private ItemCart(){}
+    public static ItemCart getInstance(){
+        if (instance == null)
+        {
+            synchronized (ItemCart.class)
+            {
+                if(instance == null)
+                {
+                    instance = new ItemCart();
+                }
+            }
+        }
+
+        return instance;
+    }
     @Override
     public double getPrice() {
 //        return items.stream().map((item -> item.getPrice())).reduce(0.0,Double::sum);

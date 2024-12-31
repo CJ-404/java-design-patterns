@@ -5,7 +5,7 @@ import common.PatternDemo;
 public class CompositePatternDemo implements PatternDemo {
     @Override
     public void run() {
-        ItemCart cart = new ItemCart();
+        ItemCart cart = ItemCart.getInstance(); // used singleton lazy pattern
 
         cart.addItem(new LiquidItem(4000.00,"Mendis.pvt.ltd").setVolumeInLitre(1.5));
         cart.addItem(new LiquidItem(3200.00,"DCSL.pvt.ltd").setVolumeInLitre(1.5));
