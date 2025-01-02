@@ -1,5 +1,6 @@
 import builder.BuilderPatternDemo;
 import composite.CompositePatternDemo;
+import decorator.DecoratorPatternDemo;
 import facade.FacadePatternDemo;
 import factory.FactoryPatternDemo;
 import prototype.ProtoypePatternDemo;
@@ -10,7 +11,7 @@ public class Main {
 
     public static void main(String[] args)
     {
-        Class activePattern = CompositePatternDemo.class;
+        Class activePattern = DecoratorPatternDemo.class;
 
         if(activePattern == SingletonPatternDemo.class || activePattern == null)
             new SingletonPatternDemo().run();
@@ -32,6 +33,9 @@ public class Main {
 
         if(activePattern == CompositePatternDemo.class || activePattern == null)
             new CompositePatternDemo().run();
+
+        if(activePattern == DecoratorPatternDemo.class || activePattern == null)
+            new DecoratorPatternDemo().run();
     }
 
 }
